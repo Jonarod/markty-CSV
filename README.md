@@ -119,7 +119,7 @@ var convertToJson = MatrixToJSON(parsedToArray, 1)
 
 | Test         | Observations | markty-CSV | [node-csvtojson][1] | [5 liner gist][2] |
 |:-------------|:-------------|-----------:|--------------------:|------------------:|
-| gzipped size |              |      800 b |            46.899 b |         **147 b** |
+| gzipped size |              |      307 b |            46.899 b |         **147 b** |
 
 
 [1]: https://github.com/Keyang/node-csvtojson
