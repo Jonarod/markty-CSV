@@ -1,9 +1,5 @@
 :microscope: Nano CSV parser for javascript using [Markty.js](https://github.com/Jonarod/markty).
 
-# Demo
-
-:eyes: **[Try the live converter here](https://jsfiddle.net/sL9ssuch/13/)** :eyes:
-
 
 # Quick start
 
