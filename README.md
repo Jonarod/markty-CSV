@@ -62,7 +62,7 @@ console.log( marktycsv(someCSV) )
 ```
 
 ## FEATURES
-- :microscope: **Ridiculously SMALL:**: 100 LOC, 800 bytes gzipped
+- :microscope: **Ridiculously SMALL:**: 15 LOC, 300 bytes gzipped
 - :zap: Blazing fast  :zap: see **benchmarks**
 - **@TODO**:
     - [ ] parse integers like `1`, `2`, `3` as javascript `int`...
