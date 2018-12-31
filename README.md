@@ -76,6 +76,7 @@ console.log( marktycsv(someCSV) )
     - [ ] parse dates like `1979-05-27T00:32:00-07:00`, `1979-05-27` as javascript's `date` object
     - [ ] allow for various delimiters like `;`, `|`, `\t`...
     - [ ] allow escape character like `"`
+    - [ ] allow multidimensional values like : `deeply.nested.header`
 
 
 ## Should you use it ?
@@ -83,6 +84,7 @@ console.log( marktycsv(someCSV) )
 - Not benchmarked **YET**, especially against HUGE csv files, so just make your tests before using it :)
 - Not meant to replace fully-fledged CSV parsers like [https://github.com/Keyang/node-csvtojson](node-csvtojson).
 - `markty-CSV` just gives you an array of csv values line by line: the rest is up to you !!
+- At this stage, you should just go for the simper simple [gist here](https://gist.github.com/Jonarod/b971b2df24ba46c33c37afb2a1dcb974), it should cover 80% of all needs. `markty-CSV` will provide more value when the todo list will be completed: nested keys, automatic serialization, character escaping...
 
 ## Hey !! But I need to convert my CSV to JSON ! 
 
@@ -120,7 +122,10 @@ var convertToJson = MatrixToJSON(parsedToArray, 1)
 | Test         | Observations | markty-CSV | [node-csvtojson][1] | [5 liner gist][2] |
 |:-------------|:-------------|-----------:|--------------------:|------------------:|
 | gzipped size |              |      307 b |            46.899 b |         **147 b** |
-
+| **Parsing tests:**                                                                 |
+| [simple][3] | [link to bench][4] | 415.708 ops/s | 41.248 ops/s | **2.535.754 ops/s** |
 
 [1]: https://github.com/Keyang/node-csvtojson
 [2]: https://gist.github.com/Jonarod/b971b2df24ba46c33c37afb2a1dcb974
+[3]: https://github.com/Jonarod/markty-CSV/tree/master/benchmarks/simple.json
+[4]: https://jsbench.me/ujjqboth8e/1
